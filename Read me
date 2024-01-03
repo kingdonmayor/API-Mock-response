@@ -1,0 +1,5 @@
+This is a mock response for Modify the response before it is sent to the backend/client.
+Steps:
+Login to azure portal
+Navigate to Apim- select preferred Api
+select Inbound processing and replace existing policy with the new format
