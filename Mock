@@ -1,0 +1,18 @@
+<policies>
+    <inbound>
+        <base />
+        <return-response>
+            <set-status code="404" reason="Hi, Service is currently unvailable." />
+        </return-response>
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <base />
+        <mock-response status-code="401" content-type="application/json" />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>
